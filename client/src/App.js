@@ -1,5 +1,5 @@
 
-import './App.css';
+//import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import BottomBar from './Components/General/BottomBar';
 import Home from './Components/General/Home';

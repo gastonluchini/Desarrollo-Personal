@@ -1,0 +1,17 @@
+
+.containerHome {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.containerHome h1 {
+    background-color: green;
+    text-align: center;
+}
+
+.colHome {
+    border: 2px solid pink;
+    text-align: center;
+    margin: 0 auto;
+}
+

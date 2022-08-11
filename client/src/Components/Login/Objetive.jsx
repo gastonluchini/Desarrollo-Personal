@@ -1,13 +1,14 @@
 
 import React, { useState } from 'react';
-import { Button, Modal } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
+import Modals from './Modals';
 
 const Objetive = () => {
 
    const [show, setShow] = useState(false);
    const [input, setInput] = useState({
       one: '',
-      two: '',
+      two: [],
    });
 
    const handleShow = () => setShow(true);
@@ -22,11 +23,10 @@ const Objetive = () => {
       e.preventDefault();
       setInput({
          ...input, 
-         two: input.one
+         two: [...input.two, input.one]
       });
       setShow(false)
    }
-
 
    return (
       <div>
@@ -36,19 +36,21 @@ const Objetive = () => {
             Nuevo Objetivo
          </Button>
 
-         <div>{input.two}</div>
+         <Modals 
+            handleClose={handleClose}
+            handleNewObjetive={handleNewObjetive}
+            handleChangeModal={handleChangeModal}
+            show={show}
+         />
 
-         <Modal show={show} onHide={handleClose}>
-            <Modal.Header closeButton>
-               <Modal.Title>Ingresa un nuevo objetivo</Modal.Title>
-            </Modal.Header>
-            <Modal.Body><input onChange={handleChangeModal}></input></Modal.Body>
-            <Modal.Footer>
-               <Button variant="primary" onClick={handleNewObjetive}>
-                  Guardar
-               </Button>
-            </Modal.Footer>
-         </Modal>
+         <div>           
+            {
+               input.two?.map(e=>(
+                  <div key={e}>{e}</div>
+               ))
+               
+            }  
+         </div> 
 
       </div>
    );

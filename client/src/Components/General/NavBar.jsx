@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
 
 const NavBar = () => {
    return (
@@ -31,7 +33,7 @@ const NavBar = () => {
 
                   <li className="nav-item">
                      <a className="nav-link" href="#">
-                        Servicios
+                        Que es App Objetivos?
                      </a>
                   </li>
 
@@ -74,24 +76,9 @@ const NavBar = () => {
 
                   </li>
 
-                  <li className="nav-item">
-                     <a className="nav-link disabled">Disabled</a>
-                  </li>
-
                </ul>
 
-               <form className="d-flex" role="search">
-                  <input
-                     className="form-control me-2"
-                     type="search"
-                     placeholder="Search"
-                     aria-label="Search"
-                  />
-
-                  <button className="btn btn-outline-success" type="submit">
-                     Search
-                  </button>
-               </form>
+               <Link to='/user'><Button>Iniciar Sesion</Button></Link>
 
             </div>
          </div>

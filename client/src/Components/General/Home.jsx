@@ -17,7 +17,7 @@ const Home = () => {
             <Row>
                <Col sm={12} md={12} lg={12} className='colHome'>
                   <h1>La plataforma creada </h1>
-                  <h1>para que logres tus objetivos</h1>
+                  <h1>para que logres tus objetivos </h1>
                </Col>
             </Row>
 

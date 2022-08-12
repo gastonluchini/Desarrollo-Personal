@@ -1,0 +1,14 @@
+
+.container {
+    border: 1px solid white;
+    text-align: center;
+}
+
+/* .container h4 {
+    color: aliceblue;
+} */
+
+.col {
+    border: 1px solid green;
+    width: 200px
+}

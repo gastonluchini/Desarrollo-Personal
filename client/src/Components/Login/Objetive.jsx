@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import Modals from './Modals';
+import style from '../Styles/objetive.module.css';
 
 const Objetive = () => {
 
@@ -29,7 +30,7 @@ const Objetive = () => {
    }
 
    return (
-      <div>
+      <div className={style.container}>
          <h2>Objetivos</h2>
 
          <Button variant="primary" onClick={handleShow}>
@@ -46,7 +47,7 @@ const Objetive = () => {
          <div>           
             {
                input.two?.map(e=>(
-                  <div key={e}>{e}</div>
+                  <div className='shadow p-3 mb-5' key={e}>{e}</div>
                ))
                
             }  

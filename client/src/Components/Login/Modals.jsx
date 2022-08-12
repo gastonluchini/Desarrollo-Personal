@@ -10,7 +10,12 @@ const Modals = ({ handleClose, handleNewObjetive, handleChangeModal, show }) => 
             <Modal.Header closeButton>
                <Modal.Title>Ingresa un nuevo objetivo</Modal.Title>
             </Modal.Header>
-            <Modal.Body><input onChange={handleChangeModal}></input></Modal.Body>
+
+            <Modal.Body>
+               <label htmlFor="obj" style={{margin: '10px'}}>Objetivo</label>
+               <input id='obj' placeholder='escribe aqui ...' onChange={handleChangeModal}/>
+            </Modal.Body>
+
             <Modal.Footer>
                <Button variant="primary" onClick={handleNewObjetive}>
                   Guardar

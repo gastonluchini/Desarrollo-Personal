@@ -1,6 +1,7 @@
 
 import React from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import NavBar from './NavBar';
 import CardHome from './CardHome';
 
@@ -48,6 +49,39 @@ const Home = () => {
 
                </Col>
 
+            </Row>
+
+            <Row>
+
+               <Col>
+                  <h4>Cual es aquella meta, que te gustaria alcanzar?</h4>
+                  <h4>Cual es tu objetivo estrella de este año?</h4>
+               </Col>
+
+            </Row>
+
+            <Row>
+
+               <Col>
+                  <img src="https://placeimg.com/200/200/tech" alt="Tech" />
+               </Col>
+
+               <Col>
+                  <img src="https://placeimg.com/200/200/tech" alt="Tech" />
+               </Col>
+
+               <Col>
+                  <img src="https://placeimg.com/200/200/tech" alt="Tech" />
+               </Col>
+
+            </Row>
+
+            <Row>
+
+               <Col>
+                  <Link to='/user'><Button>Empezar ahora</Button></Link>
+               </Col>
+            
             </Row>
 
          </Container>

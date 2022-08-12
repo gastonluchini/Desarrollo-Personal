@@ -2,29 +2,44 @@
 import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import Habits from './Habits';
 import Objetive from './Objetive';
+import style from '../Styles/userPanel.module.css';
+import NavBarLogin from './NavBarLogin';
+import VisionBoard from './VisionBoard';
+
 
 const UserPanel = () => {
 
-   const [component, setComponent] = useState('')
+   const [component, setComponent] = useState(<VisionBoard/>)
 
    const handleInput = (e) => {
       e.preventDefault();
       const name = e.target.name
+      if (name === 'panelVision') setComponent(<VisionBoard />)
       if (name === 'objetivos') setComponent(<Objetive />)
+      if (name === 'habits') setComponent(<Habits />)
    }
 
-   return (
+   return (  
       <div>
-         <Link to='/'><div>Volver</div></Link>
 
-        <Button name='objetivos' onClick={handleInput}>Objetivos</Button>
+         <NavBarLogin /> 
 
-         <div>Habitos</div>
+         <div className={style.containerUserPanel}>
 
-         <div>{component}</div>
-
-      </div>
+            <h5>Bienvenido:</h5>
+               
+            <div className={style.containerButtons}>
+               <Button className={style.button} name='panelVision' onClick={handleInput}>Panel de Vision</Button>
+               <Button className={style.button} name='objetivos' onClick={handleInput}>Objetivos</Button>    
+               <Button className={style.button} name='habits' onClick={handleInput}>Habitos</Button>
+            </div> 
+          
+            <div className={style.containerComponent}>{component}</div>
+               
+         </div>
+      </div> 
    );
 }
 

@@ -12,16 +12,16 @@ const Home = () => {
       
          <NavBar />
 
-         <Container className='container' style={{ border: '1px solid red', padding: '10px' }}>
+         <Container className='containerHome' style={{ border: '1px solid red', padding: '10px' }}>
             
-            <Row>
-               <Col sm={12} md={12} lg={12} className='colHome'>
+            <Row className='rowHome1'>
+               <Col sm={12} md={12} lg={12}>
                   <h1>La plataforma creada </h1>
                   <h1>para que logres tus objetivos </h1>
                </Col>
             </Row>
 
-            <Row>  
+            <Row className='rowHome2'>  
 
                <Col className='colHome'>
                   <CardHome 
@@ -40,13 +40,11 @@ const Home = () => {
                </Col>
 
                <Col className='colHome'>
-
                   <CardHome 
                      title={'Alcanzar tus sueños'}
                      text={'Cualquiera sea tus metas, AppObjetivos va a ayudarte a que consigas lo que quieras.'}
                      link={'Habitos'}
                   />
-
                </Col>
 
             </Row>

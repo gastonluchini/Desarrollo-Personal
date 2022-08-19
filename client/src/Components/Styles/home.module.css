@@ -1,0 +1,29 @@
+
+.containerTest {
+    background-color: peru;
+    width: 400px;
+    height: 350px;
+
+}
+
+.boxUno {
+    background-color: aqua;
+    width: 200px;
+    height: 150px;
+}
+
+.boxDos {
+    background-color: lightcoral;
+    width: 200px;
+    height: 150px;
+    
+}
+
+.boxTres {
+    background-color: lightseagreen;
+    width: 200px;
+    height: 150px;
+    margin-left: 20px;
+    margin-top: -30px;
+    
+}

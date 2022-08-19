@@ -4,6 +4,7 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import NavBar from './NavBar';
 import CardHome from './CardHome';
+import style from '../Styles/home.module.css';
 
 const Home = () => {
 
@@ -83,6 +84,14 @@ const Home = () => {
             </Row>
 
          </Container>
+
+         <div className={style.containerTest}>
+            <div className={style.boxUno}>1</div>
+         </div>
+
+         <div className={style.boxDos}>2</div>
+
+         <div className={style.boxTres}>3</div>
 
       </div>
    );

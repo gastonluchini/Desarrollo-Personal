@@ -20,7 +20,7 @@
     padding: 20px 0px;
     margin-bottom: 60px;
     
-    /*display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center; */
 }
@@ -29,11 +29,10 @@
     border: 2px solid pink;
     text-align: center;
     background-color: darkcyan;
+    display: flex;
+    justify-content: center;
     /* display: flex;
     justify-content: end; */
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 
 .cardHome-1 {

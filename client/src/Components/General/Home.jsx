@@ -53,7 +53,7 @@ const Home = () => {
             <Row>
 
                <Col>
-                  <h4>Cual es aquella meta, que te gustaria alcanzar?</h4>
+                  <h4>Cual es aquella meta que te gustaria alcanzar?</h4>
                   <h4>Cual es tu objetivo estrella de este año?</h4>
                </Col>
 

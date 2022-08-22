@@ -13,19 +13,19 @@ const VisionBoard = () => {
             <Row>
 
                <Col lg={6} md={6} sm={12} className={style.col}>
-                  <img src="https://placeimg.com/200/200/animals" alt="Animals" />
+                  <img src="https://placeimg.com/200/200/teach" alt="Animals" />
                </Col>
 
                <Col lg={6} md={6} sm={12} className={style.col}>
-                  <img src="https://placeimg.com/200/200/animals" alt="Animals" />
+                  <img src="https://placeimg.com/200/200/teach" alt="Animals" />
                </Col>
 
                <Col lg={6} md={6} sm={12} className={style.col}>
-                  <img src="https://placeimg.com/200/200/animals" alt="Animals" />
+                  <img src="https://placeimg.com/200/200/teach" alt="Animals" />
                </Col>
 
                <Col lg={6} md={6} sm={12} className={style.col}>
-                  <img src="https://placeimg.com/200/200/animals" alt="Animals" />
+                  <img src="https://placeimg.com/200/200/teach" alt="Animals" />
                </Col>
 
             </Row>
